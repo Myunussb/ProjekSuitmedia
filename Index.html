@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="assets/LogoSuitmedia.jpeg" alt="Suitmedia Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" class="active">Ideas</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Ideas</h1>
+            <p>Where all our great things begin</p>
+        </div>
+    </section>
+
+    <section class="list-posts">
+        <div class="list-controls">
+            <span>Showing 1 - 10 of 100</span>
+            <div>
+            <label for="show-per-page">Show per page:</label>
+            <select id="show-per-page" >
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+    
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="popular">Most Popular</option>
+            </select>
+            </div>
+        </div>
+        <div class="container" id="post-container">
+           
+        </div>
+        <div class="pagination">
+            <a href="#" id="prev" onclick="previousPage()">«</a>
+            <a href="#" class="active" id="current-page">1</a>
+            <a href="#"  id="current-page">2</a>
+            <a href="#"  id="current-page">3</a>
+            <a href="#" id="next" onclick="nextPage()">»</a>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
